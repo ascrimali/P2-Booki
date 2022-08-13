@@ -1,3 +1,4 @@
+/*Modifit la police*/
 @font-face {
     font-family: 'Raleway';
     src: url(Raleway-Regular.ttf);
@@ -7,6 +8,7 @@ body{
     font-family: 'Raleway';
 }
 
+/*début du header*/
 /*Première barre de navigation*/
 #navigationRapide{
     display: flex;
@@ -72,7 +74,7 @@ body{
     width: 52px;
     height: 52px;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 17px 0px 0px 17px;
 }
 
 #BSearch{
@@ -99,6 +101,7 @@ body{
 }
 
 /*troisième barre de navigation*/
+/*Ensemble de la navigation*/
 #navBoutons{
     display: flex;
     padding-left: 55px;
@@ -112,7 +115,8 @@ body{
     font-weight: bold;
     width: 85px;
 }
-
+/*Les filtres sont mis à la suite, id finit par L si Logo et par B si Bouton*/
+/*Rassemble le logo et le filtre Economique*/
 #Eco{
     display: flex;
     justify-content: center;
@@ -144,6 +148,7 @@ body{
     height: 44px;
 }
 
+/*Rassemble le logo et le filtre Familial*/
 #Fami{
     display: flex;
     justify-content: center;
@@ -175,6 +180,7 @@ body{
     height: 44px;
 }
 
+/*Rassemble le logo et le filtre Romantique*/
 #Romanti{
     display: flex;
     justify-content: center;
@@ -206,6 +212,7 @@ body{
     height: 44px;
 }
 
+/*Rassemble le logo et le filtre Animaux autorisés*/
 #Anim{
     display: flex;
     justify-content: center;
@@ -236,15 +243,138 @@ body{
     height: 44px;
 }
 
+/*barre d'info*/
 #info{
     display: flex;
     align-items: center;
     padding-left: 55px;
-    padding-top: 20px;
+    padding-top: 37px;
 }
-
+/* mis en commentaire pour l'instant car bug
 #infoL{
 }
 
 #infoP{
+}
+*/
+
+/*Fin du Header*/
+/*Début du main*/
+
+/*Commun au main*/
+.titreSection{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.etoile{
+    display: flex;
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
+.textDecorationNone{
+    text-decoration: none;
+}
+
+/*Rassemble Section Hébergement et Aside Les Plus populaires*/
+#principal{
+    display: flex;
+}
+
+/*Section Hébergement*/
+
+#hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    margin-top: 37px;
+    margin-right: 50px;
+    margin-left: 42px;
+    border-radius: 17px 17px 17px 17px;
+    width: 880px;
+    height: 625px;
+}
+
+#tousHebergement{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conteneurHebergement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    border-radius: 17px 17px 17px 17px;
+}
+
+.imgHebergement{
+    width: 230px;
+    height: 115px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+.infoHebergement{
+    align-items: start;
+    width: 215px;
+}
+
+.nomHebergement{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-size: 0.8em;
+}
+
+.prixHebergement{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-size: 0.8em;
+}
+
+#afficherPlus{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/*Fin Section Hébergements*/
+/*Début Aside Les Plus Populaires*/
+
+#populaire{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.conteneurPopulaire{
+
+}
+
+.imgPopulaire{
+    width: 250px;
+    height: 250px;
+}
+
+.nomPopulaire{
+
+}
+
+.prixPopulaire{
+
 }
