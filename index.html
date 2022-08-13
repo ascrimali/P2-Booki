@@ -2,43 +2,69 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Booki</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67b4180896.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header>
-
-        <div>
-            <img src="images/logo/Booki.png" alt="Logo de Booki">
-        </div>
-
+        <!--Logo Booki suivis des liens Hébergement et Activités dans la première barre de navigation-->
         <nav>
-            <a href="#hebergement">Hébergements</a>
-            <a href="#activités">Activités</a>
+            <div id="navigationRapide">
+                <div><img id="logo" src="images/logo/Booki.png" alt="Logo de Booki"></div>
+                <div id="lien">
+                    <div><a id="lienHebergement" href="#hebergement">Hébergements</a></div>
+                    <div><a id="lienAct" href="#activités">Activités</a></div>
+                </div>
+            </div>
         </nav>
-
+        <!--Titre de niveau 1, phrase <p>-->
+            <h1 id="premierTitre" >Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p id="phrase" >En plein centre ville ou en pleine nature</p>
+        <!--logo maps, barre de recherche, bouton rechercher-->
         <nav>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            
-            <form action="#">
-                <input type="search" placeholder="Marseille, France">
-                <input type="submit" value="Rechercher">
-            </form>
+            <div id="formulair">
+                <div id="iconeMaps"><i class="fa-solid fa-location-dot"></i></div>
+                <div>   
+                    <form action="#">
+                        <input id="BSearch" type="search" placeholder="   Marseille, France">
+                    </form>
+                </div> 
+                <div>
+                    <form action="#">  
+                        <input id="search" type="submit" value="Rechercher">
+                    </form>
+                </div>
+            </div>
         </nav>
-
+        <!--Elements de filtrage,-->
         <nav>
-            <p>Filtres</p>
+            <div id="navBoutons">
+                    <div id="flitres">Filtres</div>
+                <div id="Eco">
+                    <div id="ecoL"><i class="fa-solid fa-money-bill-wave"></i></div>
+                    <div id="ecoB">Economique</div>
+                </div>
 
-            <div>Economique</div>
+                <div id="Fami">
+                    <div id="famiL"><i class="fa-solid fa-child-reaching"></i></div>
+                    <div id="famiB">Familial</div>
+                </div>
+                
+                <div id="Romanti">
+                    <div id="romantiL"><i class="fa-solid fa-heart"></i></div>
+                    <div id="romantiB">Romantique</div>
+                </div>
 
-            <div>Familial</div>
-
-            <div>Romantique</div>
-
-            <div>Animaux autorisés</div>
-
-            <p>i Plus de 500 logements sont disponibles dans cette ville</p>
+                <div id="Anim">
+                    <div id="animL"><i class="fa-solid fa-dog"></i></div>
+                    <div id="animB">Animaux autorisés</div>
+                </div>
+            </div>
+            <div id="info">
+                <div id="infoL"><i class="fa-light fa-circle-info"></i></div>
+                <div id="infoP">Plus de 500 logements sont disponibles dans cette ville</div>
+            </div>
         </nav>
 
     </header>
