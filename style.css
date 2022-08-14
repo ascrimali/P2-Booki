@@ -14,40 +14,36 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1330px;
+    height: 90px;
+    margin-left: 45px;
 }
 
 #logo{
     width: 95px;
-    height: auto;
-    padding-top: 36px;
-    padding-left: 61px;
 }
 
 #lien{
+    width: 270px;
+    height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 368px;
-    margin-top: 15px;
 }
 
 #lienHebergement{
     text-decoration: none;
     color: #0065FC;
+    font-weight: bold;
     border-top: 3px #0065FC solid;
-    padding-top: 45px;
+    padding-top: 40px;
     padding-left: 25px;
-    padding-right: 25px
+    padding-right: 25px;
 }
 
 #lienAct{
     text-decoration: none;
-    color: black;
-    padding-left: 60px;
-}
-
-#lienActM{
-    margin-right: 200px;
+    font-weight: bold;
 }
 
 /*Texte entre les deux nav*/
@@ -130,6 +126,8 @@ body{
     height: 47px;
     margin-right: 25px;
 }
+
+
 
 #ecoL{
     display: flex;
@@ -504,9 +502,6 @@ body{
 }
 
 /*colonne S et M*/
-#colonne2{
-    margin-right: ;
-}
 
 #conteneurActiviteS{
     border-radius: 17px 17px 17px 17px;
