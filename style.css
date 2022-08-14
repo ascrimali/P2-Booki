@@ -43,8 +43,11 @@ body{
 #lienAct{
     text-decoration: none;
     color: black;
-    padding-right: 180px;
     padding-left: 60px;
+}
+
+#lienActM{
+    margin-right: 200px;
 }
 
 /*Texte entre les deux nav*/
@@ -502,7 +505,7 @@ body{
 
 /*colonne S et M*/
 #colonne2{
-
+    margin-right: ;
 }
 
 #conteneurActiviteS{
