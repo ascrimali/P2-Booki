@@ -67,19 +67,28 @@
             </div>
         </nav>
     </header>
-
+    <!--Fonctionnement du main-->
+    <!--Une div "principal" qui regroupe la section "hebergement" et aside "populaire" pour les placer dans une même flexbox-->
+    <!--La section "hebergement" regroupe toutes les div et fait un background gris-->
+    <!--La div "tousHebergement" regroupe toutes les cases d'hébregement pour les positionner-->
     <main>
         <div id="principal">
             <section id="hebergement">
                 <h2 class="titreSection">Hébergements à Marseille</h2>
                 <div id="tousHebergement">
-                    
+                    <!--Fonctionnement d'un conteneur-->
+                    <!--Un lien qui englobe tous le conteneur pour que celui ci soit cliquable dans son entièreté avec la class "textDecorationNone" pour la forme du texte-->
                     <a class="textDecorationNone" href="#">
+                        <!--La div "conteneurHebergement" contient la photo, le nom, le prix, la note-->
                         <div class="conteneurHebergement">
+                            <!--La photo-->
                             <div><img class="imgHebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière"></div>
-                            <div class="infoHebergement">    
+                            <!--Une div "infoHebergement" qui sépare la photo du reste pour un meilleur placement des flexbox-->
+                            <div class="infoHebergement">
+                                <!--une div pour le nom, une pour le prix-->    
                                 <div class="nomHebergement"><h3>Auberge La Cannebière</h3></div>
                                 <div class="prixHebergement"><p>Nuit à partir de 25€</p></div>
+                                <!--div qui rassemble les étoiles-->
                                 <div class="etoile">    
                                     <div><i class="fa-solid fa-star"></i></div>
                                     <div><i class="fa-solid fa-star"></i></div>
@@ -240,53 +249,57 @@
             </aside>
         </div>
         
-        <section id="activités">
-            <h1 class="titreSection">Activités à Marseille</h1>
+        <section id="activite">
+            <h1 id="titreActivite">Activités à Marseille</h1>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                    <h3>Vieux Port</h3>
-                </div>
-            </a>
+            <div id="tousActivite">
+                <a class="textDecorationNone" href="#">
+                    <div class="conteneurActiviteXL">
+                        <div><img class="imgActiviteXL" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"></div>
+                        <div class="nomActivite"><h3>Vieux Port</h3></div>
+                    </div>
+                </a>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                    <h3>Fort de Pomègues</h3>
-                </div>
-            </a>
+                <div id="colonne1">
+                    <a class="textDecorationNone" href="#">
+                        <div id="conteneurActiviteL">
+                            <div><img id="imgActiviteL" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"></div>
+                            <div class="nomActivite"><h3>Fort de Pomègues</h3></div>
+                        </div>
+                    </a>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                    <h3>Îles du Frioul</h3>
+                    <a class="textDecorationNone" href="#">
+                        <div id="conteneurActiviteXS">
+                            <div><img id="imgActiviteXS" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"></div>
+                            <div class="nomActivite"><h3>Îles du Frioul</h3></div>
+                        </div>
+                    </a>
                 </div>
-            </a>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                    <h3>Parc National des Calanques</h3>
-                </div>
-            </a>
+                <a class="textDecorationNone" href="#">
+                    <div class="conteneurActiviteXL">
+                        <div><img class="imgActiviteXL" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"></div>
+                        <div class="nomActivite"><h3>Parc National des Calanques</h3></div>
+                    </div>
+                </a>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                    <h3>Notre-Dame-de-la-Garde</h3>
-                </div>
-            </a>
+                <div id="colonne2">
+                    <a class="textDecorationNone" href="#">
+                        <div id="conteneurActiviteS">
+                            <div><img id="imgActiviteS" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"></div>
+                            <div class="nomActivite"><h3>Notre-Dame-de-la-Garde</h3></div>
+                        </div>
+                    </a>
 
-            <a class="textDecorationNone" href="#">
-                <div>
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                    <h3>Parc Longchamp</h3>
-                </div>
-            </a>
+                    <a class="textDecorationNone" href="#">
+                        <div id="conteneurActiviteM">
+                            <div><img id="imgActiviteM" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></div>
+                            <div class="nomActivite"><h3>Parc Longchamp</h3></div>
+                        </div>
+                    </a>
+                </div>    
+            </div>
         </section>
-
-
     </main>
 
     <footer>
