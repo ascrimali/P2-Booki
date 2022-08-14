@@ -287,6 +287,8 @@ body{
 /*Rassemble Section Hébergement et Aside Les Plus populaires*/
 #principal{
     display: flex;
+    margin-left: 45px;
+    width: 1330px;
 }
 
 /*Section Hébergement*/
@@ -297,7 +299,6 @@ body{
     background-color: #F2F2F2;
     margin-top: 37px;
     margin-right: 40px;
-    margin-left: 42px;
     margin-bottom: 20px;
     border-radius: 17px 17px 17px 17px;
     width: 880px;
@@ -436,7 +437,8 @@ body{
 #activite{
     display: flex;
     flex-direction: column;
-    margin-left: 42px;
+    margin-left: 45px;
+    width: 1330px;
 }
 
 .nomActivite{
@@ -537,10 +539,11 @@ footer{
     margin-top: 60px;
     margin-right: 100px;
     height: 220px;
+    width: 1430px;
 }
 
 #aPropos{
-    margin-left: 42px;
+    margin-left: 45px;
     margin-top: 30px;
     font-size: 1em;
 }
