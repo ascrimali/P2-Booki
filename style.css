@@ -280,6 +280,7 @@ body{
 
 .textDecorationNone{
     text-decoration: none;
+    color: black;
 }
 
 /*Rassemble Section Hébergement et Aside Les Plus populaires*/
@@ -294,7 +295,7 @@ body{
     flex-wrap: wrap;
     background-color: #F2F2F2;
     margin-top: 37px;
-    margin-right: 50px;
+    margin-right: 40px;
     margin-left: 42px;
     border-radius: 17px 17px 17px 17px;
     width: 880px;
@@ -359,22 +360,67 @@ body{
 #populaire{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
+    margin-top: 37px;
+    width: 420px;
+    height: 625px;
+    border-radius: 17px 17px 17px 17px;
+}
+
+#titrePop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+}
+
+#titrePopu{
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 .conteneurPopulaire{
-
+    display: flex;
+    width: 340px;
+    height: 145px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
 }
 
 .imgPopulaire{
-    width: 250px;
-    height: 250px;
+    width: 130px;
+    height: 132px;
+    border-radius: 17px 0px 0px 17px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.infoPopulaire{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
 }
 
 .nomPopulaire{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    width: 130px;
+    height: 40px;
+    margin-top: 12px;
 }
 
 .prixPopulaire{
-
+    display: flex;
+    align-items: center;
+    height: 25px;
+    font-size: 0.8em;
+    margin-bottom: 40px;
 }
