@@ -8,13 +8,17 @@ body{
     font-family: 'Raleway';
 }
 
+img{
+    object-fit: cover;
+}
+
 /*début du header*/
 /*Première barre de navigation*/
 #navigationRapide{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1330px;
+    width: 1405px;
     height: 90px;
     margin-left: 45px;
 }
@@ -46,17 +50,11 @@ body{
     font-weight: bold;
 }
 
-@media screen and (max-width: 992px){
-    #navigationRapide{
-        width: 880px;
-    }
-}
-
 /*Texte entre les deux nav*/
 #premierTitre{
     margin-top: 20px;
     margin-left: 45px;
-    width: 1330px;
+    width: 1405px;
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 0;
@@ -65,14 +63,14 @@ body{
 #phrase{
     margin-left: 45px;
     margin-top: 10px;
-    width: 1330px;
+    width: 1405px;
 }
 
 /*Deuxième barre de navigation*/
 #formulair{
     display: flex;
     margin-left: 45px;
-    width: 1330px;
+    width: 1405px;
 }
 
 #iconeMaps{
@@ -85,14 +83,14 @@ body{
     border-radius: 17px 0px 0px 17px;
 }
 
-#BSearch{
+#searchB{
     width: 230px;
     height: 50px;
     font-weight: bold;
     border: 1px solid #F2F2F2;
 }
 
-#BSearch::placeholder{
+#searchB::placeholder{
     color: black;
     font-size: 1.3em;
 }
@@ -118,12 +116,6 @@ body{
     width: 900px;
 }
 
-@media screen and (max-width: 992px){
-    #navBoutons{
-        width: 880px;
-    }
-}
-
 #flitres{
     display: flex;
     align-items: center;
@@ -133,7 +125,7 @@ body{
 }
 /*Les filtres sont mis à la suite, id finit par L si Logo et par B si Bouton*/
 /*Rassemble le logo et le filtre Economique*/
-#Eco{
+#eco{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +156,7 @@ body{
 }
 
 /*Rassemble le logo et le filtre Familial*/
-#Fami{
+#fami{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +187,7 @@ body{
 }
 
 /*Rassemble le logo et le filtre Romantique*/
-#Romanti{
+#romanti{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +218,7 @@ body{
 }
 
 /*Rassemble le logo et le filtre Animaux autorisés*/
-#Anim{
+#anim{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,16 +252,22 @@ body{
 #info{
     display: flex;
     align-items: center;
-    padding-left: 55px;
-    padding-top: 37px;
-}
-/* mis en commentaire pour l'instant car bug
-#infoL{
+    width: 1405px;
+    margin-left: 45px;
+    margin-top: 37px;
 }
 
-#infoP{
+#infoL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    border: 1px #D9D9D9 solid;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
-*/
 
 /*Fin du Header*/
 /*Début du main*/
@@ -291,6 +289,10 @@ body{
     color: #0065FC;
 }
 
+.etoileG{
+    color: #D9D9D9 !important;
+}
+
 .textDecorationNone{
     text-decoration: none;
     color: black;
@@ -299,24 +301,17 @@ body{
 /*Rassemble Section Hébergement et Aside Les Plus populaires*/
 #principal{
     display: flex;
+    justify-content: space-between;
     margin-left: 45px;
-    width: 1330px;
-}
-
-@media screen and (max-width: 992px){
-    #principal{
-        display: block;
-    }
+    width: 1405px;
 }
 
 /*Section Hébergement*/
-
 #hebergement{
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
     margin-top: 37px;
-    margin-right: 40px;
     margin-bottom: 20px;
     border-radius: 17px 17px 17px 17px;
     width: 880px;
@@ -335,8 +330,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 240px;
-    height: 200px;
-    background-color: rgb(255, 255, 255);
+    height: 191px;
+    background-color: #ffffff;
     margin-bottom: 25px;
     border-radius: 17px 17px 17px 17px;
     box-shadow: 1px 1px 5px #ebebeb;
@@ -345,7 +340,7 @@ body{
 .imgHebergement{
     width: 230px;
     height: 115px;
-    border-radius: 17px 17px 0px 0px;
+    border-radius: 13px 13px 0px 0px;
 }
 
 .infoHebergement{
@@ -390,26 +385,6 @@ body{
     width: 420px;
     height: 625px;
     border-radius: 17px 17px 17px 17px;
-
-}
-
-@media screen and (max-width: 992px){
-    #populaire{
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 880px;
-        height: 300px;
-    }
-    #tousPopulaire{
-        display: flex;
-        flex-direction: row;
-        width: 880px;
-        height: 750;
-    }
-    #titrePop{
-        width: ;
-    }
-
 }
 
 #titrePop{
@@ -428,9 +403,9 @@ body{
 .conteneurPopulaire{
     display: flex;
     width: 340px;
-    height: 145px;
+    height: 142px;
     margin-bottom: 25px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 17px 17px 17px 17px;
     box-shadow: 1px 1px 5px #ebebeb;
 }
@@ -438,7 +413,7 @@ body{
 .imgPopulaire{
     width: 130px;
     height: 132px;
-    border-radius: 17px 0px 0px 17px;
+    border-radius: 13px 0px 0px 13px;
     margin-left: 5px;
     margin-top: 5px;
     margin-right: 20px;
@@ -476,7 +451,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 45px;
-    width: 1330px;
+    width: 1405px;
 }
 
 .nomActivite{
@@ -490,6 +465,7 @@ body{
 
 #tousActivite{
     display: flex;
+    justify-content: space-between;
 }
 
 #titreActivite{
@@ -503,7 +479,6 @@ body{
     display: flex;
     flex-direction: column;
     border-radius: 17px 17px 17px 17px;
-    margin-right: 40px;
     box-shadow: 1px 1px 5px #ebebeb;
 }
 
@@ -514,9 +489,6 @@ body{
 }
 
 /*colonne L et XS*/
-#colonne1{
-    margin-right: 30px;
-}
 
 #conteneurActiviteL{
     border-radius: 17px 17px 17px 17px;
@@ -577,7 +549,7 @@ footer{
     margin-top: 60px;
     margin-right: 100px;
     height: 220px;
-    width: 1430px;
+    width: 1500px;
 }
 
 #aPropos{
@@ -608,4 +580,33 @@ footer{
 
 #assistanceT{
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px){
+    #navigationRapide{
+        width: 880px;
+    }
+    #navBoutons{
+        width: 880px;
+    }
+    #principal{
+        display: block;
+    }
+    #populaire{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 880px;
+        height: 300px;
+    }
+    #tousPopulaire{
+        display: flex;
+        flex-direction: row;
+        width: 880px;
+        height: 750;
+    }
+    #titrePop{
+        border: 3px red solid !important;
+        width: 880px;
+    }
+
 }
