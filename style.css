@@ -46,6 +46,12 @@ body{
     font-weight: bold;
 }
 
+@media screen and (max-width: 992px){
+    #navigationRapide{
+        width: 880px;
+    }
+}
+
 /*Texte entre les deux nav*/
 #premierTitre{
     margin-top: 20px;
@@ -110,6 +116,12 @@ body{
     margin-top: 30px;
     margin-left: 45px;
     width: 900px;
+}
+
+@media screen and (max-width: 992px){
+    #navBoutons{
+        width: 880px;
+    }
 }
 
 #flitres{
@@ -291,6 +303,12 @@ body{
     width: 1330px;
 }
 
+@media screen and (max-width: 992px){
+    #principal{
+        display: block;
+    }
+}
+
 /*Section Hébergement*/
 
 #hebergement{
@@ -372,6 +390,26 @@ body{
     width: 420px;
     height: 625px;
     border-radius: 17px 17px 17px 17px;
+
+}
+
+@media screen and (max-width: 992px){
+    #populaire{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 880px;
+        height: 300px;
+    }
+    #tousPopulaire{
+        display: flex;
+        flex-direction: row;
+        width: 880px;
+        height: 750;
+    }
+    #titrePop{
+        width: ;
+    }
+
 }
 
 #titrePop{
