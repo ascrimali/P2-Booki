@@ -584,29 +584,106 @@ footer{
 
 @media screen and (max-width: 992px){
     #navigationRapide{
-        width: 880px;
-    }
-    #navBoutons{
-        width: 880px;
+        width: 900px;
     }
     #principal{
-        display: block;
+        flex-direction: column-reverse;
+        width: 900px;
+    }
+    #hebergement{
+        width: 900px;
     }
     #populaire{
         justify-content: flex-start;
-        align-items: flex-start;
-        width: 880px;
-        height: 300px;
+        align-items: space-around;
+        width: 900px;
+        height: 250px;
     }
     #tousPopulaire{
         display: flex;
         flex-direction: row;
-        width: 880px;
+        justify-content: space-around;
+        width: 900px;
         height: 750;
     }
     #titrePop{
-        border: 3px red solid !important;
-        width: 880px;
+        width: 850px;
+        justify-content: space-between;
     }
-
+    .conteneurPopulaire{
+        width: 285px;
+        height: 142px;
+    }
+    #activite{
+        width: 900px;
+        height: 480px;
+    }
+    #tousActivite{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 480px;
+    }
+    .imgActiviteXL{
+        width: 230px;
+        height: 115px;
+    }
+    /*colonne L et XS*/
+    #colonne1{
+        display: flex;
+        justify-content: space-between;
+        width: 535px;
+    }
+    #imgActiviteL{
+        width: 230px;
+        height: 115px;
+    }
+    #imgActiviteXS{
+        width: 230px;
+        height: 115px;
+        border-radius: 17px 17px 0px 0px;
+    }
+    /*colonne S et M*/
+    #colonne2{
+        display: flex;
+        justify-content: space-between;
+        width: 535px;
+    }
+    #imgActiviteS{
+        width: 230px;
+        height: 115px;
+        border-radius: 17px 17px 0px 0px;
+    }
+    #imgActiviteM{
+        width: 230px;
+        height: 115px;
+        border-radius: 17px 17px 0px 0px;
+    }
+    footer{
+        justify-content: space-around;
+        width: 945px;
+    }
+    #aPropos{
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    #aProposT{
+        margin-bottom: 30px;
+    }
+    #nosHebergement{
+        margin-top: 30px;
+        font-size: 1em;
+        margin-right: 0px;
+    }
+    #nosHebergementT{
+        margin-bottom: 30px;
+    }
+    #assistance{
+        margin-right: 0px;
+        margin-top: 30px;
+        font-size: 1em;
+    }
+    #assistanceT{
+        margin-bottom: 30px;
+    }
 }
