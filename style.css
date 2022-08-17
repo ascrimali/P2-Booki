@@ -48,6 +48,7 @@ img{
 #lienAct{
     text-decoration: none;
     font-weight: bold;
+    color: black;
 }
 
 /*Texte entre les deux nav*/
@@ -77,8 +78,8 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     background-color: #F2F2F2;
     border-radius: 17px 0px 0px 17px;
 }
@@ -110,21 +111,37 @@ img{
 /*Ensemble de la navigation*/
 #navBoutons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 30px;
     margin-left: 45px;
     width: 900px;
+    height: 47px;
 }
 
-#flitres{
+#filtre{
     display: flex;
     align-items: center;
     font-size: 1.1em;
     font-weight: bold;
     width: 50px;
 }
+
+#boutonFiltre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 47px;
+}
 /*Les filtres sont mis à la suite, id finit par L si Logo et par B si Bouton*/
 /*Rassemble le logo et le filtre Economique*/
+#ecoFami{
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
 #eco{
     display: flex;
     justify-content: center;
@@ -151,7 +168,7 @@ img{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 135px;
+    width: 115px;
     height: 44px;
 }
 
@@ -182,7 +199,7 @@ img{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 80px;
+    width: 70px;
     height: 44px;
 }
 
@@ -213,7 +230,7 @@ img{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 120px;
+    width: 105px;
     height: 44px;
 }
 
@@ -244,7 +261,7 @@ img{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 170px;
+    width: 150px;
     height: 44px;
 }
 
@@ -344,7 +361,6 @@ img{
 }
 
 .infoHebergement{
-    align-items: start;
     width: 215px;
 }
 
@@ -582,17 +598,36 @@ footer{
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
+/*Première barre de navigation*/
     #navigationRapide{
         width: 900px;
     }
+/*troisième barre de navigation*/
+    #navBoutons{
+        width: 850px;
+        height: 47px;
+    }
+    #boutonFiltre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 750px;
+        height: 47px;
+    }
+    #ecoFami{
+        width: 322px;
+    }
+/*Rassemble Section Hébergement et Aside Les Plus populaires*/
     #principal{
         flex-direction: column-reverse;
         width: 900px;
     }
+/*Section Hébergement*/
     #hebergement{
         width: 900px;
     }
+/*Aside Les Plus Populaires*/
     #populaire{
         justify-content: flex-start;
         align-items: space-around;
@@ -614,6 +649,7 @@ footer{
         width: 285px;
         height: 142px;
     }
+/*Section Activités à Marseille*/
     #activite{
         width: 900px;
         height: 480px;
@@ -640,7 +676,6 @@ footer{
     #imgActiviteXS{
         width: 230px;
         height: 115px;
-        border-radius: 17px 17px 0px 0px;
     }
     /*colonne S et M*/
     #colonne2{
@@ -651,13 +686,12 @@ footer{
     #imgActiviteS{
         width: 230px;
         height: 115px;
-        border-radius: 17px 17px 0px 0px;
     }
     #imgActiviteM{
         width: 230px;
         height: 115px;
-        border-radius: 17px 17px 0px 0px;
     }
+/*Footer*/
     footer{
         justify-content: space-around;
         width: 945px;
@@ -687,3 +721,263 @@ footer{
         margin-bottom: 30px;
     }
 }
+
+@media screen and (max-width: 768px) {
+/*Première barre de navigation*/
+    #navigationRapide{
+        display: block;
+        width: 350px;
+        margin-left: 0px;
+    }
+    #divLogo{
+        display: flex;
+        justify-content: center;
+    }
+    #lien{
+        width: 350px;
+        justify-content: flex-start;
+    }
+    #lienHebergement{
+        border-top: none;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #divLienHebergement{
+        display: flex;
+        justify-content: center;
+        border-bottom:  3px #0065FC solid;
+        width: 175px;
+    }
+    #lienActM{
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px #D9D9D9 solid;
+        width: 175px;
+    }
+/*Texte entre les deux nav*/
+    #premierTitre{
+        margin-left: 0px;
+        width: 350px;
+    }
+    #phrase{
+        margin-left: 0px;
+        width: 350px;
+    }
+/*Deuxième barre de navigation*/
+    #formulair{
+        margin-left: 0px;
+        width: 350px;
+    }
+    #iconeMaps{
+        width: 40px;
+        height: 40px;
+    }
+    #searchB{
+        width: 200px;
+        height: 40px;
+    }
+    #searchB::placeholder{
+        color: black;
+        font-size: 1.3em;
+    }
+    /*Je sais pas comment changer le bouton en image*/
+    #search{
+        width: 110px;
+        height: 40px;
+    }
+    /* <i class="fa-solid fa-magnifying-glass"></i>
+    */
+
+/*troisième barre de navigation*/
+    #navBoutons{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 0px;
+        width: 300px;
+        height: 220px;
+    }
+    #filtre{
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        width: 50px;
+    }
+    #boutonFiltre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 300px;
+        height: 200px;
+    }
+    #ecoFami{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+/*barre d'info*/
+    #info{
+        width: 350px;
+        margin-left: 0px;
+        margin-top: 18px;
+    }
+    #infoL{
+        width: 27px;
+    }
+/*Rassemble Section Hébergement et Aside Les Plus populaires*/
+    #principal{
+        margin-left: 0px;
+        width: 350px;
+        justify-content: flex-start;
+    }
+/*Début Aside Les Plus Populaires*/
+    #populaire{
+        margin-top: 30px;
+        width: 350px;
+        height: 590px;
+        border-radius: 0px 0px 0px 0px;
+    }
+    #tousPopulaire{
+        flex-direction: column;
+        width: 300px;
+    }
+    #titrePop{
+        width: 300px;
+    }
+    .conteneurPopulaire{
+        width: 300px;
+    }
+/*Section Hébergement*/
+    #hebergement{
+        background-color: #ffffff;
+        width: 350px;
+        height: 1450px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #tousHebergement{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 1370px;
+    }
+    .conteneurHebergement{
+        width: 300px;
+    }
+    .imgHebergement{
+        width: 290px;
+        border-radius: 13px 13px 0px 0px;
+    }
+    .infoHebergement{
+        align-items: flex-start;
+        width: 280px;
+    }
+    #afficherPlus{
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 30px;
+    }
+/*Section Activités à Marseille*/
+/*Commun à toutes les activités*/
+    #activite{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        width: 350px;
+        height: 1500px;
+    }
+    #titreActivite{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    #tousActivite{
+        height: 1500px;
+    }
+    .nomActivite{
+        margin-left: 0px;
+    }
+    #colonne1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 440px;
+    }
+    #colonne2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 440px;
+    }
+    /*activitéXL*/
+    .imgActiviteXL{
+        width: 300px;
+        height: 140px;
+    }
+    /*colonne L et XS*/
+    #imgActiviteL{
+        width: 300px;
+        height: 140px;
+    }
+    #imgActiviteXS{
+        width: 300px;
+        height: 140px;
+    }
+    /*colonne S et M*/
+    #imgActiviteS{
+        width: 300px;
+        height: 140px;
+    }
+    #imgActiviteM{
+        width: 300px;
+        height: 140px;
+    }
+/*Début Footer*/
+    footer{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-right: 0px;
+        width: 350px;
+        height: 420px;
+    }
+    #aPropos{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    #aProposT{
+        margin-bottom: 0px;
+    }
+    #nosHebergement{
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    #nosHebergementT{
+        margin-bottom: 0px;
+    }
+    #assistance{
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    #assistanceT{
+        margin-bottom: 0px;
+    }
+}
+
+
+

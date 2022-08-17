@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Booki</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/67b4180896.js" crossorigin="anonymous"></script>
@@ -13,7 +14,7 @@
             <div id="navigationRapide">
                 <div id="divLogo"><img id="logo" src="images/logo/Booki.png" alt="Logo de Booki"></div>
                 <div id="lien">
-                    <div><a id="lienHebergement" href="#hebergement">Hébergements</a></div>
+                    <div id="divLienHebergement"><a id="lienHebergement" href="#hebergement">Hébergements</a></div>
                     <div id="lienActM"><a id="lienAct" href="#activite">Activités</a></div>
                 </div>
             </div>
@@ -40,30 +41,33 @@
         <!--Elements de filtrage,-->
         <nav>
             <div id="navBoutons">
-                    <div id="flitres">Filtres</div>
-                <div id="eco">
-                    <div id="ecoL"><i class="fa-solid fa-money-bill-wave"></i></div>
-                    <div id="ecoB">Economique</div>
-                </div>
+                <div id="filtre">Filtres</div>
+                    <div id="boutonFiltre">    
+                    <div id="ecoFami">        
+                            <div id="eco">
+                                <div id="ecoL"><i class="fa-solid fa-money-bill-wave"></i></div>
+                                <div id="ecoB">Economique</div>
+                            </div>
 
-                <div id="fami">
-                    <div id="famiL"><i class="fa-solid fa-child-reaching"></i></div>
-                    <div id="famiB">Familial</div>
-                </div>
+                            <div id="fami">
+                                <div id="famiL"><i class="fa-solid fa-child-reaching"></i></div>
+                                <div id="famiB">Familial</div>
+                            </div>
+                    </div>
+                            <div id="romanti">
+                                <div id="romantiL"><i class="fa-solid fa-heart"></i></div>
+                                <div id="romantiB">Romantique</div>
+                            </div>
 
-                <div id="romanti">
-                    <div id="romantiL"><i class="fa-solid fa-heart"></i></div>
-                    <div id="romantiB">Romantique</div>
-                </div>
-
-                <div id="anim">
-                    <div id="animL"><i class="fa-solid fa-dog"></i></div>
-                    <div id="animB">Animaux autorisés</div>
-                </div>
-            </div>
-            <div id="info">
-                <div id="infoL"><i class="fa-solid fa-info"></i></div>
-                <div id="infoP">Plus de 500 logements sont disponibles dans cette ville</div>
+                            <div id="anim">
+                                <div id="animL"><i class="fa-solid fa-dog"></i></div>
+                                <div id="animB">Animaux autorisés</div>
+                            </div>
+                    </div>
+                </div>   
+                <div id="info">
+                    <div id="infoL"><i class="fa-solid fa-info"></i></div>
+                    <div id="infoP">Plus de 500 logements sont disponibles dans cette ville</div>
             </div>
         </nav>
     </header>
