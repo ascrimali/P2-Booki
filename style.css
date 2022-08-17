@@ -134,6 +134,10 @@ img{
     width: 800px;
     height: 47px;
 }
+
+.decoB{
+    text-decoration: none;
+}
 /*Les filtres sont mis à la suite, id finit par L si Logo et par B si Bouton*/
 /*Rassemble le logo et le filtre Economique*/
 #ecoFami{
@@ -150,6 +154,7 @@ img{
     border-left: none;
     border-radius: 50px;
     height: 47px;
+    color: black;
 }
 
 #ecoL{
@@ -172,6 +177,14 @@ img{
     height: 44px;
 }
 
+#eco:hover{
+    background-color: #DEEBFF;
+}
+
+#eco:hover #ecoL{
+    background-color: white;
+    border:2px #D9D9D9 solid;
+}
 /*Rassemble le logo et le filtre Familial*/
 #fami{
     display: flex;
@@ -181,6 +194,7 @@ img{
     border-left: none;
     border-radius: 50px;
     height: 47px;
+    color: black;
 }
 
 #famiL{
@@ -203,6 +217,14 @@ img{
     height: 44px;
 }
 
+#fami:hover{
+    background-color: #DEEBFF;
+}
+
+#fami:hover #famiL{
+    background-color: white;
+    border:2px #D9D9D9 solid;
+}
 /*Rassemble le logo et le filtre Romantique*/
 #romanti{
     display: flex;
@@ -212,6 +234,7 @@ img{
     border-left: none;
     border-radius: 50px;
     height: 47px;
+    color: black;
 }
 
 #romantiL{
@@ -234,6 +257,14 @@ img{
     height: 44px;
 }
 
+#romanti:hover{
+    background-color: #DEEBFF;
+}
+
+#romanti:hover #romantiL{
+    background-color: white;
+    border:2px #D9D9D9 solid;
+}
 /*Rassemble le logo et le filtre Animaux autorisés*/
 #anim{
     display: flex;
@@ -243,6 +274,7 @@ img{
     border-left: none;
     border-radius: 50px;
     height: 47px;
+    color: black;
 }
 
 #animL{
@@ -265,6 +297,14 @@ img{
     height: 44px;
 }
 
+#anim:hover{
+    background-color: #DEEBFF;
+}
+
+#anim:hover #animL{
+    background-color: white;
+    border:2px #D9D9D9 solid;
+}
 /*barre d'info*/
 #info{
     display: flex;
@@ -338,6 +378,7 @@ img{
 #tousHebergement{
     display: flex;
     justify-content: space-around;
+    align-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -349,7 +390,6 @@ img{
     width: 240px;
     height: 191px;
     background-color: #ffffff;
-    margin-bottom: 25px;
     border-radius: 17px 17px 17px 17px;
     box-shadow: 1px 1px 5px #ebebeb;
 }
@@ -656,6 +696,7 @@ footer{
     }
     #tousActivite{
         justify-content: space-around;
+        align-content: space-between;
         flex-wrap: wrap;
         height: 480px;
     }
@@ -668,6 +709,7 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 535px;
+        height: 165px;
     }
     #imgActiviteL{
         width: 230px;
@@ -682,6 +724,7 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 535px;
+        height: 165px;
     }
     #imgActiviteS{
         width: 230px;
@@ -861,8 +904,8 @@ footer{
     #tousHebergement{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
         width: 350px;
         height: 1370px;
     }
