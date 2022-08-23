@@ -10,21 +10,18 @@
 <body>
     <header>
         <!--Logo Booki suivis des liens Hébergement et Activités dans la première barre de navigation-->
-        <nav>
-            <div id="navigationRapide">
+        <nav id="navigationRapide">
                 <div id="divLogo"><img id="logo" src="images/logo/Booki.png" alt="Logo de Booki"></div>
                 <div id="lien">
                     <div id="divLienHebergement"><a id="lienHebergement" href="#hebergement">Hébergements</a></div>
                     <div id="lienActM"><a id="lienAct" href="#activite">Activités</a></div>
                 </div>
-            </div>
         </nav>
         <!--Titre de niveau 1, phrase <p>-->
             <h1 id="premierTitre" >Trouvez votre hébergement pour des vacances de rêve</h1>
             <p id="phrase" >En plein centre ville ou en pleine nature</p>
         <!--logo maps, barre de recherche, bouton rechercher-->
-        <nav>
-            <div id="formulair">
+        <nav id="formulair">
                 <div id="iconeMaps"><i class="fa-solid fa-location-dot"></i></div>
                 <div>   
                     <form action="#">
@@ -32,43 +29,41 @@
                     </form>
                 </div> 
                 <div>
-                    <form action="#">  
-                        <input id="search" type="submit" value="Rechercher">
-                    </form>
+                    <button id="search" class="desktop">Rechercher</button>
+                    <button id="search" class="mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-            </div>
         </nav>
         <!--Elements de filtrage,-->
         <nav>
             <div id="navBoutons">
                 <div id="filtre">Filtres</div>
                     <div id="boutonFiltre">    
-                    <div id="ecoFami">        
-                            <a class="decoB" href="#">
-                                <div id="eco">
-                                    <div id="ecoL"><i class="fa-solid fa-money-bill-wave"></i></div>
-                                    <div id="ecoB">Economique</div>
-                                </div>
-                            </a>
-                            <a class="decoB" href="#">
-                                <div id="fami">
-                                    <div id="famiL"><i class="fa-solid fa-child-reaching"></i></div>
-                                    <div id="famiB">Familial</div>
-                                </div>
-                            </a>
+                        <div id="ecoFami">        
+                                <a class="decoB" href="#">
+                                    <div id="eco">
+                                        <div id="ecoL"><i class="fa-solid fa-money-bill-wave"></i></div>
+                                        <div id="ecoB">Economique</div>
+                                    </div>
+                                </a>
+                                <a class="decoB" href="#">
+                                    <div id="fami">
+                                        <div id="famiL"><i class="fa-solid fa-child-reaching"></i></div>
+                                        <div id="famiB">Familial</div>
+                                    </div>
+                                </a>
                     </div>
-                            <a class="decoB" href="#">
-                                <div id="romanti">
-                                    <div id="romantiL"><i class="fa-solid fa-heart"></i></div>
-                                    <div id="romantiB">Romantique</div>
-                                </div>
-                            </a>
-                            <a class="decoB" href="#">
-                                <div id="anim">
-                                    <div id="animL"><i class="fa-solid fa-dog"></i></div>
-                                    <div id="animB">Animaux autorisés</div>
-                                </div>
-                            </a>
+                                <a class="decoB" href="#">
+                                    <div id="romanti">
+                                        <div id="romantiL"><i class="fa-solid fa-heart"></i></div>
+                                        <div id="romantiB">Romantique</div>
+                                    </div>
+                                </a>
+                                <a class="decoB" href="#">
+                                    <div id="anim">
+                                        <div id="animL"><i class="fa-solid fa-dog"></i></div>
+                                        <div id="animB">Animaux autorisés</div>
+                                    </div>
+                                </a>
                     </div>
                 </div>   
                 <div id="info">
@@ -194,8 +189,8 @@
                             </div>                               
                         </div>
                     </a>
-                    <div id="afficherPlus"><p>Afficher plus</p></div>
                 </div>
+                <div id="afficherPlus"><p>Afficher plus</p></div>
             </section>
 
             
@@ -262,7 +257,7 @@
         </div>
         
         <section id="activite">
-            <h1 id="titreActivite">Activités à Marseille</h1>
+            <h2 id="titreActivite">Activités à Marseille</h2>
 
             <div id="tousActivite">
                 <a class="textDecorationNone" href="#">

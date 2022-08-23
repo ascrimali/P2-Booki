@@ -1,13 +1,26 @@
+/*Supprime la bordure de la page*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Modifit la police*/
 @font-face {
     font-family: 'Raleway';
     src: url(Raleway-Regular.ttf);
 }
 
+/*centre la page du site*/
 body{
     font-family: 'Raleway';
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
+/*Permet aux images de rester nettes en se centrer*/
 img{
     object-fit: cover;
 }
@@ -20,7 +33,6 @@ img{
     align-items: center;
     width: 1405px;
     height: 90px;
-    margin-left: 45px;
 }
 
 #logo{
@@ -40,7 +52,7 @@ img{
     color: #0065FC;
     font-weight: bold;
     border-top: 3px #0065FC solid;
-    padding-top: 40px;
+    padding-top: 32px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -54,7 +66,6 @@ img{
 /*Texte entre les deux nav*/
 #premierTitre{
     margin-top: 20px;
-    margin-left: 45px;
     width: 1405px;
     font-size: 1.4em;
     font-weight: bold;
@@ -62,15 +73,14 @@ img{
 }
 
 #phrase{
-    margin-left: 45px;
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 1405px;
 }
 
 /*Deuxième barre de navigation*/
 #formulair{
     display: flex;
-    margin-left: 45px;
     width: 1405px;
 }
 
@@ -107,6 +117,10 @@ img{
     border-radius: 0px 15px 15px 0px;
 }
 
+#search.mobile {
+    display: none;
+}
+
 /*troisième barre de navigation*/
 /*Ensemble de la navigation*/
 #navBoutons{
@@ -114,7 +128,6 @@ img{
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
-    margin-left: 45px;
     width: 900px;
     height: 47px;
 }
@@ -310,7 +323,6 @@ img{
     display: flex;
     align-items: center;
     width: 1405px;
-    margin-left: 45px;
     margin-top: 37px;
 }
 
@@ -330,16 +342,6 @@ img{
 /*Début du main*/
 
 /*Commun au main*/
-.titreSection{
-    display: flex;
-    justify-content: space-between;
-    height: 30px;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
 .etoile{
     display: flex;
     font-size: 0.7em;
@@ -359,14 +361,14 @@ img{
 #principal{
     display: flex;
     justify-content: space-between;
-    margin-left: 45px;
     width: 1405px;
 }
 
 /*Section Hébergement*/
 #hebergement{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #F2F2F2;
     margin-top: 37px;
     margin-bottom: 20px;
@@ -375,11 +377,20 @@ img{
     height: 625px;
 }
 
+.titreSection{
+    height: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
 #tousHebergement{
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
+    height: 450px;
 }
 
 .conteneurHebergement{
@@ -419,11 +430,7 @@ img{
 }
 
 #afficherPlus{
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin-left: 30px;
 }
 
 
@@ -459,7 +466,7 @@ img{
 .conteneurPopulaire{
     display: flex;
     width: 340px;
-    height: 142px;
+    height: 143px;
     margin-bottom: 25px;
     background-color: rgb(255, 255, 255);
     border-radius: 17px 17px 17px 17px;
@@ -470,9 +477,9 @@ img{
     width: 130px;
     height: 132px;
     border-radius: 13px 0px 0px 13px;
-    margin-left: 5px;
-    margin-top: 5px;
     margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .infoPopulaire{
@@ -506,7 +513,6 @@ img{
 #activite{
     display: flex;
     flex-direction: column;
-    margin-left: 45px;
     width: 1405px;
 }
 
@@ -515,7 +521,6 @@ img{
     align-items: center;
     font-size: 0.8em;
     font-weight: bold;
-    margin-left: 15px;
     height: 50px;
 }
 
@@ -603,44 +608,66 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    margin-right: 100px;
     height: 220px;
     width: 1500px;
 }
 
 #aPropos{
-    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 125px;
     margin-top: 30px;
+    margin-left: 47px;
     font-size: 1em;
 }
 
 #aProposT{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #nosHebergement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px;
     margin-top: 30px;
     font-size: 1em;
     margin-right: 50px;
 }
 
 #nosHebergementT{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #assistance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
     margin-right: 350px;
     margin-top: 30px;
     font-size: 1em;
 }
 
 #assistanceT{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 992px) {
 /*Première barre de navigation*/
     #navigationRapide{
+        width: 900px;
+    }
+/*Texte entre les deux nav*/
+    #premierTitre{
+        width: 900px;
+    }
+    #phrase{
+        width: 900px;
+    }
+/*Deuxième barre de navigation*/
+    #formulair{
         width: 900px;
     }
 /*troisième barre de navigation*/
@@ -658,6 +685,10 @@ footer{
     #ecoFami{
         width: 322px;
     }
+/*barre d'info*/
+    #info{
+        width: 900px;
+    }
 /*Rassemble Section Hébergement et Aside Les Plus populaires*/
     #principal{
         flex-direction: column-reverse;
@@ -670,7 +701,7 @@ footer{
 /*Aside Les Plus Populaires*/
     #populaire{
         justify-content: flex-start;
-        align-items: space-around;
+        align-content: space-around;
         width: 900px;
         height: 250px;
     }
@@ -679,7 +710,6 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         width: 900px;
-        height: 750;
     }
     #titrePop{
         width: 850px;
@@ -741,27 +771,12 @@ footer{
     }
     #aPropos{
         margin-left: 0px;
-        margin-top: 30px;
-        font-size: 1em;
-    }
-    #aProposT{
-        margin-bottom: 30px;
     }
     #nosHebergement{
-        margin-top: 30px;
-        font-size: 1em;
         margin-right: 0px;
-    }
-    #nosHebergementT{
-        margin-bottom: 30px;
     }
     #assistance{
         margin-right: 0px;
-        margin-top: 30px;
-        font-size: 1em;
-    }
-    #assistanceT{
-        margin-bottom: 30px;
     }
 }
 
@@ -810,28 +825,38 @@ footer{
 /*Deuxième barre de navigation*/
     #formulair{
         margin-left: 0px;
-        width: 350px;
+        width: 290px;
+        border-radius: 17px 15px 15px 17px;
+        border-right: none !important;
+        border-left: none !important;
+        border: 1px solid #F2F2F2;
     }
     #iconeMaps{
-        width: 40px;
+        width: 50px;
         height: 40px;
     }
     #searchB{
         width: 200px;
         height: 40px;
+        border: none;
     }
     #searchB::placeholder{
         color: black;
         font-size: 1.3em;
     }
-    /*Je sais pas comment changer le bouton en image*/
     #search{
-        width: 110px;
+        width: 40px;
         height: 40px;
+        border-radius: 15px 15px 15px 15px;
     }
-    /* <i class="fa-solid fa-magnifying-glass"></i>
-    */
 
+    #search.desktop {
+        display: none;
+    }
+
+    #search.mobile {
+        display: initial;
+    }
 /*troisième barre de navigation*/
     #navBoutons{
         flex-direction: column;
@@ -991,7 +1016,7 @@ footer{
 /*Début Footer*/
     footer{
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 0px;
         margin-right: 0px;
         width: 350px;
