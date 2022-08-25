@@ -106,7 +106,7 @@ img{
     font-size: 1.3em;
 }
 
-#search{
+.search{
     background-color: #0065FC;
     border: none;
     width: 130px;
@@ -117,7 +117,7 @@ img{
     border-radius: 0px 15px 15px 0px;
 }
 
-#search.mobile {
+.mobile {
     display: none;
 }
 
@@ -844,17 +844,17 @@ footer{
         color: black;
         font-size: 1.3em;
     }
-    #search{
+    .search{
         width: 40px;
         height: 40px;
         border-radius: 15px 15px 15px 15px;
     }
 
-    #search.desktop {
+    .desktop {
         display: none;
     }
 
-    #search.mobile {
+    .mobile {
         display: initial;
     }
 /*troisième barre de navigation*/
@@ -1046,6 +1046,3 @@ footer{
         margin-bottom: 0px;
     }
 }
-
-
-
